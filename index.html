@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+  <script src="index.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div id="particles-js">
+    <div id="formContainer">
+      <div id="header">
+        <i class="fa fa-question-circle" aria-hidden="true" id="help_icon"></i></br>
+        <h3>WELCOME TO NMIMS LMS PORTAL</h3>
+      </div>
+      <div id="divider">
+        <hr>
+      </div>
+    
+      <form  name="myform" id="form" method="post" action="#" onsubmit="validate">
+        <label for="username">Enter your username<br />
+          <input type="email" placeholder="email" id="email"  required/></label>
+        <br/>
+        <label for="password">Enter your password<br />
+          <input type="password" placeholder="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></label><br />
+        <button onclick="login()">Login</button><br />
+        <button onclick="register()">Register</button><br />
+        <!-- <button onclick="logOut()">Log Out</button> -->
+      </form>
+
+    </div>
+    <div id="redirect"><h2>WELCOME</h2> <button onclick="logOut()">Log Out</button></div>
+  </div>
+  <div id="contact-icon">
+    <div >
+      <i class="fa fa-download"></i>
+      <h4></h4>
+    </div>
+    <div>
+      <i class="fa fa-eye"></i>
+      <h4></h4>
+    </div>
+    <div>
+      <i class="fa fa-download"></i>
+      <h4></h4>
+    </div>
+    <div>
+      <i class="fa fa-headset"></i>
+      <h4></h4>
+    </div>
+  </div>
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

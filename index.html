@@ -23,39 +23,45 @@
       <div id="divider">
         <hr>
       </div>
-    
-      <form  name="myform" id="form" method="post" action="#" onsubmit="validate">
+
+      <form name="myform" id="form" method="post" action="#" onsubmit="validate">
         <label for="username">Enter your username<br />
-          <input type="email" placeholder="email" id="email"  required/></label>
-        <br/>
+          <input type="email" placeholder="email" id="email" required /></label>
+        <br />
         <label for="password">Enter your password<br />
-          <input type="password" placeholder="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></label><br />
+          <input type="password" placeholder="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required /></label><br />
         <button onclick="login()">Login</button><br />
         <button onclick="register()">Register</button><br />
         <!-- <button onclick="logOut()">Log Out</button> -->
       </form>
 
     </div>
-    <div id="redirect"><h2>WELCOME</h2> <button onclick="logOut()">Log Out</button></div>
+    <div id="redirect">
+      <h2>WELCOME</h2> <button onclick="logOut()">Log Out</button>
+    </div>
   </div>
   <div id="contact-icon">
-    <div >
-      <i class="fa fa-download"></i>
-      <h4></h4>
+    <div class="icon-div">
+      <i class="fa fa-download w3-large"></i>
+      <h6>Hostel application</h6>
     </div>
-    <div>
-      <i class="fa fa-eye"></i>
-      <h4></h4>
+    <div class="icon-div">
+      <i class="fa fa-eye w3-large"></i>
+      <h6>View Application</h6>
     </div>
-    <div>
-      <i class="fa fa-download"></i>
-      <h4></h4>
+    <div class="icon-div">
+      <i class="fa fa-download w3-large"></i>
+      <h6>Deposit Refund</h6>
     </div>
-    <div>
-      <i class="fa fa-headset"></i>
-      <h4></h4>
+    <div class="icon-div">
+      <i class="fa fa-support w3-larges"></i>
+      <!-- <i class="fa fa-headset w3-larges"></i> -->
+      <h6>Support</h6>
     </div>
   </div>
+
   <script type="text/javascript" src="particles.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>

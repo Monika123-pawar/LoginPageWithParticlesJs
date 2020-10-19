@@ -1,72 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
-    height: 100%;
-    display: flex;
+body {
+  font-family: sans-serif;
+  height: 100%;
+  display: flex;
 }
-#particles-js{
+#particles-js {
   position: relative;
-    height: 100vh;
-    background: radial-gradient(circle,  rgba(252,70,107,1) 0%,rgba(63,94,251,1)100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  i{
-    padding: 5px;
-  }
-  h3{
-    padding: 0rem 2rem;
-  }
-  #formContainer{
-    position: absolute;
-    background-color:#ffdbe6 ;
-    height:450px;
-    width: 400px;  
-    /* padding: 2rem; */
-    border-radius: 10px;
-  }
-  #help_icon{
-   float: right; 
-  }
-  #divider{
-    text-align: center;
-  }
-  hr{
-    width: 50px;
-    vertical-align: middle;
-    display: inline-block;
-   }
-   #form{
-     padding: 2rem 5rem;
-   }
-   label,button{
-     margin: 1em;
-   }
-   input{
-     width: 80%;
-     margin: 1em;
-    padding: 5px;
-   }
-   button{
-     color:white ;
-     background-color:rgb(194, 27, 27) ;
-     border: none;
-     width: 80%;
-     height: 2rem;
-   }
-   #redirect{
-     font-size: 3rem;
-     color: white;
-     position: absolute;
-     border-radius: 10px;
-   }
-   /* #contact-icon{
-     width: 10vh;
-     display: flex;
-     
-   } */
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgb(218, 87, 113) 0%,
+    rgb(72, 38, 126) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i {
+  padding: 5px;
+}
+h3 {
+  padding: 0rem 2rem;
+}
+#formContainer {
+  position: absolute;
+  background-color: #f0c8d4;
+  height: 400px;
+  width: 400px;
+  /* padding: 2rem; */
+  border-radius: 10px;
+}
+#help_icon {
+  float: right;
+}
+#divider {
+  text-align: center;
+}
+hr {
+  width: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+#form {
+  padding: 2rem 5rem;
+}
+label,
+button {
+  margin: 1em;
+}
+input {
+  width: 80%;
+  margin: 1em;
+  padding: 5px;
+}
+button {
+  color: white;
+  background-color: rgb(194, 27, 27);
+  border: none;
+  width: 80%;
+  height: 2rem;
+}
+#redirect {
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  border-radius: 10px;
+}
+#contact-icon {
+  width: 12vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.icon-div {
+  border: 1px black solid;
+  border-left: none;
+  border-right: none;
+  padding: 1vh;
+  height: 5rem;
+  font-size: large;
+}
+.icon-div > i {
+  size: 10px;
+}

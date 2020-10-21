@@ -88,3 +88,27 @@ button {
 .icon-div > i {
   size: 10px;
 }
+@media only screen and (max-width: 600px) {
+  body{
+    background: pink;
+    display: block;
+  }
+  #formContainer {
+    height: 350px;
+    width: 300px;
+  }
+  #header>h3{
+    font-size: 12px;
+  }
+  #form {
+    padding: 0rem 2rem;
+  }
+  label,
+button {
+  margin: 1em;
+}
+#contact-icon {
+ display: contents;
+ 
+}
+}
